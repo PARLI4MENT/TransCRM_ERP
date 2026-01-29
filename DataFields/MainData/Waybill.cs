@@ -18,9 +18,9 @@ namespace DataFields.MainData
         public float? Tons {  get; set; }
         public uint? Pieces { get; set; }
         public IDrivingRoute? DrivingRoute { get; set; }
-        public float? TonsLoadingFact { get; set; }
+        public float? TonsLoadingFact { get; set; } = 0f;
         public uint? PiecesLoadingFact { get; set; }
-        public float? TonsUnloadingFact { get; set; }
+        public float? TonsUnloadingFact { get; set; } = 0f;
         public uint? PiecesUnloadingFact { get; set; }
         public string? Comment { get; set; }
         
