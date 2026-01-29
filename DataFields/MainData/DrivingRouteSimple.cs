@@ -9,17 +9,15 @@ namespace DataFields.MainData
     {
         public Guid ID { get; private set; }
 
-        public AddressPoint AddressLoading {  get; set; }
-        public DateTime DataLoading {  get; set; }
+        public required AddressPoint AddressLoading {  get; set; }
+        public required DateTime DataLoading {  get; set; }
+        public DateTime? DataLoadingFact { get; set; }
 
-        /// <summary>
-        /// Дата погрузки факт (прибытие)
-        /// </summary>
-        public DateTime DataLoadingFact { get; set; }
-        public AddressPoint AddressUnloading { get; set; }
-        public DateTime DateUnloading { get; set; }
-        public DateTime DateUnloadingFact { get; set; }
-        public bool AssignmentStatusTN { get; set; }
+        public required AddressPoint AddressUnloading { get; set; }
+        public required DateTime DateUnloading { get; set; }
+        public DateTime? DateUnloadingFact { get; set; }
+
+        public bool AssignmentStatusTN { get; set; } = false;
 
         public DateTime InfoDateTimeCreate { get; private set; } = DateTime.Now;
     }

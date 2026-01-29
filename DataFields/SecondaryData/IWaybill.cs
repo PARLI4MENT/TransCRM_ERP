@@ -18,7 +18,7 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// ID Заявки
         /// </summary>
-        public string RequestID { get; set; }
+        public Guid RequestID { get; set; }
 
         /// <summary>
         /// Тип перевозки
@@ -33,12 +33,12 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// Дата ТН (Дата документа)
         /// </summary>
-        public DateOnly WaybillDate { get; set; }
+        public DateOnly? WaybillDate { get; set; }
 
         /// <summary>
         /// Тоннаж
         /// </summary>
-        public float Tons { get; set; }
+        public float? Tons { get; set; }
 
         /// <summary>
         /// Кол-во грузовых мест
@@ -48,7 +48,7 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// Маршрут
         /// </summary>
-        public IDrivingRoute DrivingRoute { get; set; }
+        public IDrivingRoute? DrivingRoute { get; set; }
 
         /* ПОКА НЕ НУЖНО
         /// <summary>
@@ -65,22 +65,22 @@ namespace DataFields.SecondaryData
         ///<summary>
         ///Тоннаж погрузка (факт) 0 == без факта взвешивания
         ///</summary>
-        public float TonsLoadingFact { get; set; }
+        public float? TonsLoadingFact { get; set; }
 
         /// <summary>
         /// Кол-во мест погрузка (факт)
         /// </summary>
-        public uint PiecesLoadingFact { get; set; }
+        public uint? PiecesLoadingFact { get; set; }
 
         /// <summary>
         /// Тоннаж разгрузка (факт) 0 == без факта взвешивания
         /// </summary>
-        public float TonsUnloadingFact { get; set; }
+        public float? TonsUnloadingFact { get; set; }
 
         /// <summary>
         /// Кол-во мест разгрузка (факт)
         /// </summary>
-        public uint PiecesUnloadingFact { get; set; }
+        public uint? PiecesUnloadingFact { get; set; }
 
         /// <summary>
         /// Комментарий

@@ -23,6 +23,11 @@ namespace DataFields.SecondaryData
         public DateTime DataLoading { get; set; }
 
         /// <summary>
+        /// Дата погрузки факт (прибытие)
+        /// </summary>
+        public DateTime? DataLoadingFact { get; set; }
+
+        /// <summary>
         /// Адрес пункта выгрузки
         /// </summary>
         public AddressPoint AddressUnloading { get; set; }
@@ -35,7 +40,7 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// Дата выгрузки факт (убытие)
         /// </summary>
-        public DateTime DateUnloadingFact { get; set; }
+        public DateTime? DateUnloadingFact { get; set; }
 
         /// <summary>
         /// Статус присвоения к ТН (по умолчанию == false)
