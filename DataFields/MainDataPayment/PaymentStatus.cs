@@ -9,12 +9,15 @@
         /// В ожидании оплаты
         /// </summary>
         Awaiting = 1,
+
         /// <summary>
         /// Оплачено
         /// </summary>
         Paid = 2,
+
         /// <summary>
         /// Отмена
         /// </summary>
         Cancellation = 3
     }
+}

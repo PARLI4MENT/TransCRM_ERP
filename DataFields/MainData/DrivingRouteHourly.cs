@@ -23,6 +23,6 @@ namespace DataFields.MainData
 
         public bool AssignmentStatusTN { get; set; } = false;
 
-        public DateTime InfoDateTimeCreate { get; private set; } = DateTime.Now;
+        public DateTime? InfoDateTimeCreate { get; private set; } = DateTime.Now;
     }
 }

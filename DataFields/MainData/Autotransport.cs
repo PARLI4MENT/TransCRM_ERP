@@ -7,32 +7,32 @@ namespace DataFields.MainData
         /// <summary>
         /// Первичный ключ
         /// </summary>
-        public Guid AutotransportID { get; set; }
+        public Guid AutotransportID { get; private set; }
 
         /// <summary>
         /// Вид ТС
         /// </summary>
-        public string TypeTransport { get; set; }
+        public required string TypeTransport { get; set; }
 
         /// <summary>
         /// Тип кузова
         /// </summary>
-        public string AutobodyType { get; set; }
+        public required string AutobodyType { get; set; }
 
         /// <summary>
         /// Госномер
         /// </summary>
-        public string CarRegNumber { get; set; }
+        public required string CarRegNumber { get; set; }
 
         /// <summary>
         /// Номер региона
         /// </summary>
-        public short RegionNumber { get; set; }
+        public required short RegionNumber { get; set; }
 
         /// <summary>
         /// Марка авто
         /// </summary>
-        public string CarBrand { get; set; }
+        public required string CarBrand { get; set; }
 
         /// <summary>
         /// Модель авто
@@ -47,41 +47,41 @@ namespace DataFields.MainData
         /// <summary>
         /// Объём (Длина * ширина * высота), м3
         /// </summary>
-        public float CarVolume { get; set; }
+        public float? CarVolume { get; set; }
 
         /// <summary>
         /// Габариты пространства (длина), м
         /// </summary>
-        public float SpaceDimensionsLength { get; set; }
+        public float? SpaceDimensionsLength { get; set; }
 
         /// <summary>
         /// Габариты пространства (ширина), м
         /// </summary>
-        public float SpaceDimensionsWidth { get; set; }
+        public float? SpaceDimensionsWidth { get; set; }
 
         /// <summary>
         /// Габариты пространства (высота), м
         /// </summary>
-        public float SpaceDimensionsHeight { get; set; }
+        public float? SpaceDimensionsHeight { get; set; }
 
         /// <summary>
         /// Тип загрузки/выгрузки и Дополнительные параметры
         /// </summary>
-        public LoadingUnloadingTypeAddit[] LoadingUnloadingTypeAddit { get; set; }
+        public LoadingUnloadingTypeAddit[]? LoadingUnloadingTypeAddit { get; set; }
         
         /// <summary>
         /// Право пользования ТС
         /// </summary>
-        public RightUseVehicle RightUseVehicle { get; set; }
+        public RightUseVehicle? RightUseVehicle { get; set; }
 
         /// <summary>
         /// Свидетельство о регистрации ТС -> Серия/номер
         /// </summary>
-        public string CarRegistrationCertificateNumb { get; set; }
+        public string? CarRegistrationCertificateNumb { get; set; }
 
         /// <summary>
         /// Свидетельство о регистрации ТС -> Дата выдачи
         /// </summary>
-        public DateOnly CarRegistrationCertificateDate { get; set; }
+        public DateOnly? CarRegistrationCertificateDate { get; set; }
     }
 }
