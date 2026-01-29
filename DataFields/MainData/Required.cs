@@ -9,7 +9,7 @@ namespace DataFields.MainData
         ///<summary>
         ///Первичный ключ
         ///</summary>
-        public Guid ID { get; private set; }
+        public Guid RequiredID { get; private set; }
 
         ///<summary>
         ///Номер заявки

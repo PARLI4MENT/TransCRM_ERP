@@ -13,12 +13,12 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// Первичный ключ
         /// </summary>
-        public Guid ID { get; }
+        public Guid WaybillID { get; }
 
         /// <summary>
         /// ID Заявки
         /// </summary>
-        public Guid RequestID { get; set; }
+        public Guid RequiredID { get; set; }
 
         /// <summary>
         /// Тип перевозки

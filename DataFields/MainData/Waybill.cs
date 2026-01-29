@@ -9,20 +9,20 @@ namespace DataFields.MainData
     //[NotMapped] // Запрет на создание таблицы
     public class Waybill : IWaybill
     {
-        public Guid ID { get; private set; }
+        public Guid WaybillID { get; private set; }
 
-        public required string RequestID { get; set; }
+        public required Guid RequiredID { get; set; }
         public required TypeTransportation TypeTransportation { get; set; }
         public required string WaybillNumb { get; set; }
         public DateOnly? WaybillDate {  get; set; }
-        public float? Tons { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public uint? Pieces { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IDrivingRoute? DrivingRoute { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public float? TonsLoadingFact { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public uint? PiecesLoadingFact { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public float? TonsUnloadingFact { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public uint? PiecesUnloadingFact { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string? Comment { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public float? Tons {  get; set; }
+        public uint? Pieces { get; set; }
+        public IDrivingRoute? DrivingRoute { get; set; }
+        public float? TonsLoadingFact { get; set; }
+        public uint? PiecesLoadingFact { get; set; }
+        public float? TonsUnloadingFact { get; set; }
+        public uint? PiecesUnloadingFact { get; set; }
+        public string? Comment { get; set; }
         
         public DateTime InfoDateTimeCreate { get; private set; } = DateTime.Now;
     }
