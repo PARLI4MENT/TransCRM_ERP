@@ -12,6 +12,6 @@ namespace DataFields.TechnicalData
         /// LOGS => DateTime.Now
         /// </summary>
         /// <returns></returns>
-        public DateTime InfoDateTimeCreate { get; }
+        public DateTime? InfoDateTimeCreate { get; }
     }
 }

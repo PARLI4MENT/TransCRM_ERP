@@ -24,6 +24,6 @@ namespace DataFields.MainData
         public uint? PiecesUnloadingFact { get; set; }
         public string? Comment { get; set; }
         
-        public DateTime InfoDateTimeCreate { get; private set; } = DateTime.Now;
+        public DateTime? InfoDateTimeCreate { get; private set; } = DateTime.Now;
     }
 }

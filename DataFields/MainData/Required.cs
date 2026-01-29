@@ -57,6 +57,6 @@ namespace DataFields.MainData
         /// <summary>
         /// Поле Авто
         /// </summary>
-        public Autotransport  Autotransport {  get; set; }
+        public Autotransport Autotransport {  get; set; }
     }
 }

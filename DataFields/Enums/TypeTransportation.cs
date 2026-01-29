@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataFields.Enums
+﻿namespace DataFields.Enums
 {
     /// <summary>Тип перевозки</summary>
     public enum TypeTransportation
@@ -29,11 +23,11 @@ namespace DataFields.Enums
         /// </summary>
         DifficultTransportation = 3,
 
-            /// <summary>
-            /// Круговая перевозка
-            /// Погрузка А => Погрузка Б;
-            /// Погрузка Б => Погрузка A
-            /// </summary>
+        /// <summary>
+        /// Круговая перевозка
+        /// Погрузка А => Погрузка Б;
+        /// Погрузка Б => Погрузка A
+        /// </summary>
         RoundaboutTransportation = 4
     }
 }
