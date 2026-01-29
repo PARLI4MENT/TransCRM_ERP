@@ -2,6 +2,9 @@
 
 namespace DataFields.MainData
 {
+    /// <summary>
+    /// Автотранспорт
+    /// </summary>
     public class Autotransport
     {
         /// <summary>

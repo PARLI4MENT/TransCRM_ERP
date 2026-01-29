@@ -1,10 +1,11 @@
 ﻿using DataFields.Enums;
 using DataFields.SecondaryData;
+using DataFields.TechnicalData;
 using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.MainData
 {
-    public class Required
+    public class Required: IInfoDateTimeCreate
     {
         ///<summary>
         ///Первичный ключ
@@ -58,5 +59,24 @@ namespace DataFields.MainData
         /// Поле Авто
         /// </summary>
         public Autotransport Autotransport {  get; set; }
+
+        /// <summary>
+        /// Поле Водитель
+        /// </summary>
+        public Driver Driver { get; set; }
+
+
+        //  ДОДЕЛАТЬ!!!
+        /// <summary>
+        /// Конечная стоимость заявки (по умолчанию == RequestCost, если заявка почасовая по умножается на количество часов)
+        /// </summary>
+        public double RequestCostFinal { get; set; }
+
+        /// <summary>
+        /// Комментарий к заявке
+        /// </summary>
+        public string? Comment { get; set; }
+
+        public DateTime? InfoDateTimeCreate => throw new NotImplementedException();
     }
 }
