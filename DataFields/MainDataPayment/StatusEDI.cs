@@ -1,4 +1,4 @@
-﻿namespace DataFields.Enums
+﻿namespace DataFields.MainDataPayment
 {
     /// <summary>
     /// Статус документа ЭДО

@@ -17,7 +17,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Вид ТС
         /// </summary>
-        public required string TypeTransport { get; set; }
+        public required TypeTransport TypeTransport { get; set; }
 
         /// <summary>
         /// Тип кузова
