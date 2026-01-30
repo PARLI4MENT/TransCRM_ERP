@@ -1,6 +1,7 @@
 ﻿using DataFields.TechnicalData;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Первичный ключ
         /// </summary>
+        [Key]
         public Guid DriverID { get; private set; }
 
         /// <summary>
@@ -35,12 +37,12 @@ namespace DataFields.MainData
         /// <summary>
         /// Водительские права (Ссылка на класс)
         /// </summary>
-        public DriverLicense DriverLicense { get; set; }
+        public DriverLicense? DriverLicense { get; set; }
 
         /// <summary>
         /// Паспорт (Ссылка на класс)
         /// </summary>
-        public DriverPassport? DriverPassport { get; set; }
+        public Passport? DriverPassport { get; set; }
 
         /// <summary>
         /// Номер телефона

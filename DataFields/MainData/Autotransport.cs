@@ -1,4 +1,5 @@
 ﻿using DataFields.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.MainData
 {
@@ -10,6 +11,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Первичный ключ
         /// </summary>
+        [Key]
         public Guid AutotransportID { get; private set; }
 
         /// <summary>
@@ -20,7 +22,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Тип кузова
         /// </summary>
-        public required string AutobodyType { get; set; }
+        public required AutobodyType AutobodyType { get; set; }
 
         /// <summary>
         /// Госномер
@@ -40,12 +42,12 @@ namespace DataFields.MainData
         /// <summary>
         /// Модель авто
         /// </summary>
-        public string CarModel {  get; set; }
+        public required string CarModel {  get; set; }
 
         /// <summary>
         /// Грузоподъёмность в тоннах
         /// </summary>
-        public double Lifting { get; set; }
+        public required double Lifting { get; set; }
 
         /// <summary>
         /// Объём (Длина * ширина * высота), м3

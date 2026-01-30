@@ -1,5 +1,6 @@
 ﻿using DataFields.Enums;
 using DataFields.SecondaryData;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.MainData
 {
@@ -9,6 +10,7 @@ namespace DataFields.MainData
     //[NotMapped] // Запрет на создание таблицы
     public class Waybill : IWaybill
     {
+        [Key]
         public Guid WaybillID { get; private set; }
 
         public required Guid RequiredID { get; set; }
@@ -22,8 +24,8 @@ namespace DataFields.MainData
         public uint? PiecesLoadingFact { get; set; }
         public float? TonsUnloadingFact { get; set; } = 0f;
         public uint? PiecesUnloadingFact { get; set; }
-        public string? Comment { get; set; }
         
+        public string? Comment { get; set; }
         public DateTime? InfoDateTimeCreate { get; private set; } = DateTime.Now;
     }
 }

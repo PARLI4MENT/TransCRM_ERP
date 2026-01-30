@@ -1,4 +1,6 @@
-﻿namespace DataFields.MainData
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DataFields.MainData
 {
     /// <summary>
     /// Данные водительское удостоверение
@@ -8,6 +10,7 @@
         /// <summary>
         /// Первичный ключ
         /// </summary>
+        [Key]
         public Guid DriverLicenseID { get; private set; }
 
         /// <summary>
@@ -18,16 +21,16 @@
         /// <summary>
         /// Номер
         /// </summary>
-        public int NumberLicence { get; set; }
+        public required int NumberLicence { get; set; }
 
         /// <summary>
         /// Дата выдачи
         /// </summary>
-        public DateOnly DateIssue { get; set; }
+        public required DateOnly DateIssue { get; set; }
 
         /// <summary>
         /// Дата окончания действия
         /// </summary>
-        public DateOnly DateEnd { get; set; }
+        public required DateOnly DateEnd { get; set; }
     }
 }

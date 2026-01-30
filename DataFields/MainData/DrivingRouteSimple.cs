@@ -1,4 +1,5 @@
 ﻿using DataFields.SecondaryData;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.MainData
 {
@@ -7,6 +8,7 @@ namespace DataFields.MainData
     /// </summary>
     public class DrivingRouteSimple : IDrivingRoute
     {
+        [Key]
         public Guid ID { get; private set; }
 
         public required AddressPoint AddressLoading {  get; set; }

@@ -10,6 +10,7 @@ namespace DataFields.MainData
         ///<summary>
         ///Первичный ключ
         ///</summary>
+        [Key]
         public Guid RequiredID { get; private set; }
 
         ///<summary>
@@ -53,24 +54,23 @@ namespace DataFields.MainData
         /// <summary>
         /// Транспортные накладные
         /// </summary>
-        public List<Waybill> Waybills { get; set; }
+        public List<Waybill>? Waybills { get; set; }
         
         /// <summary>
         /// Поле Авто
         /// </summary>
-        public Autotransport Autotransport {  get; set; }
+        public Autotransport? Autotransport {  get; set; }
 
         /// <summary>
         /// Поле Водитель
         /// </summary>
-        public Driver Driver { get; set; }
-
+        public Driver? Driver { get; set; }
 
         //  ДОДЕЛАТЬ!!!
         /// <summary>
         /// Конечная стоимость заявки (по умолчанию == RequestCost, если заявка почасовая по умножается на количество часов)
         /// </summary>
-        public double RequestCostFinal { get; set; }
+        public double? RequestCostFinal { get; set; }
 
         /// <summary>
         /// Комментарий к заявке
