@@ -1,4 +1,5 @@
 ﻿using DataFields.SecondaryData;
+using DataFields.TechnicalData;
 using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.MainData
@@ -22,5 +23,7 @@ namespace DataFields.MainData
         public bool AssignmentStatusTN { get; set; } = false;
 
         public DateTime InfoDateTimeCreate { get; private set; } = DateTime.Now;
+
+        DateTime? IInfoDateTimeCreate.InfoDateTimeCreate => InfoDateTimeCreate;
     }
 }

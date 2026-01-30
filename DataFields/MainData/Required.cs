@@ -5,6 +5,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.MainData
 {
+    /// <summary>
+    /// Таблица с Заявкой
+    /// </summary>
     public class Required: IInfoDateTimeCreate
     {
         ///<summary>

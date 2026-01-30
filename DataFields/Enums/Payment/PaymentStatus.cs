@@ -1,4 +1,4 @@
-﻿namespace DataFields.MainDataPayment
+﻿namespace DataFields.Enums.Payment
 {
     /// <summary>
     /// Статус оплаты
