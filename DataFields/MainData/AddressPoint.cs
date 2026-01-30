@@ -13,6 +13,6 @@ namespace DataFields.MainData
         public Guid AddressPointID { get; private set; }
 
         /// <summary>Адрес</summary>
-        public string Address { get; set; }
+        public required string Address { get; set; }
     }
 }
