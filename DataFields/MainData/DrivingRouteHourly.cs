@@ -9,7 +9,7 @@ namespace DataFields.MainData
     public class DrivingRouteHourly : IDrivingRoute
     {
         [Key]
-        public Guid ID { get; private set; }
+        public Guid DrivingRouteID { get; private set; }
 
         public required AddressPoint AddressLoading { get; set; }
         public required DateTime DataLoading { get; set; }

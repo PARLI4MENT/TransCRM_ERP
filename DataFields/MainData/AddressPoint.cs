@@ -3,11 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.MainData
 {
+    /// <summary>
+    /// <inheritdoc cref="IAddressPoint"/>
+    /// </summary>
     public class AddressPoint : IAddressPoint
     {
         /// <summary>Первичный ключ</summary>
         [Key]
-        public Guid ID { get; private set; }
+        public Guid AddressPointID { get; private set; }
 
         /// <summary>Адрес</summary>
         public string Address { get; set; }

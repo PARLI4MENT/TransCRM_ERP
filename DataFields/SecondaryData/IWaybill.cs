@@ -1,5 +1,6 @@
 ﻿using DataFields.Enums;
 using DataFields.TechnicalData;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataFields.SecondaryData
 {
@@ -11,6 +12,7 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// Первичный ключ
         /// </summary>
+        [Key]
         public Guid WaybillID { get; }
 
         /// <summary>
@@ -46,7 +48,7 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// Маршрут
         /// </summary>
-        public IDrivingRoute? DrivingRoute { get; set; }
+        public List<IDrivingRoute>? DrivingRoute { get; set; }
 
         /* ПОКА НЕ НУЖНО
         /// <summary>

@@ -8,7 +8,7 @@ namespace DataFields.MainData
     /// <summary>
     /// Таблица с Заявкой
     /// </summary>
-    public class Required: IInfoDateTimeCreate
+    public class Required : IInfoDateTimeCreate
     {
         ///<summary>
         ///Первичный ключ
@@ -24,17 +24,17 @@ namespace DataFields.MainData
         /// <summary>
         /// Дата Заявки
         /// </summary>
-        public DateOnly RequestDate { get; set; }
+        public required DateOnly RequestDate { get; set; }
 
         /// <summary>
         /// Номер заявки доп. == NULL
         /// </summary>
-        public string RequestNumbAdd { get; set; }
+        public string? RequestNumbAdd { get; set; }
 
         ///<summary>
         ///Начальная стоимость заявки
         ///</summary>
-        public double RequestCost { get; set; }
+        public required double RequestCost { get; set; }
 
         /// <summary>
         /// Тип перевозки
@@ -44,7 +44,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Массив маршрута
         /// </summary>
-        public IDrivingRoute[] DrivingRoutes { get; set; }
+        public List<IDrivingRoute>? DrivingRoutes { get; set; }
 
         /// <summary>
         /// Статус заявки (по умолчанию = Новая перевозка)
@@ -57,7 +57,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Транспортные накладные
         /// </summary>
-        public List<Waybill>? Waybills { get; set; }
+        //public List<Waybill>? Waybills { get; set; }
         
         /// <summary>
         /// Поле Авто
@@ -80,6 +80,6 @@ namespace DataFields.MainData
         /// </summary>
         public string? Comment { get; set; }
 
-        public DateTime? InfoDateTimeCreate => throw new NotImplementedException();
+        public DateTime? InfoDateTimeCreate { get; private set; } = DateTime.Now;
     }
 }

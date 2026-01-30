@@ -10,7 +10,7 @@ namespace DataFields.SecondaryData
         /// Первичный ключ
         /// </summary>
         [Key]
-        public Guid ID { get; }
+        public Guid DrivingRouteID { get; }
 
         /// <summary>
         /// Адрес пункта погрузки
