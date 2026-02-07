@@ -1,4 +1,4 @@
-﻿namespace DataFields.Enums.Payment
+﻿namespace TransCRM_ERP.Entites.Enums.Payment
 {
     /// <summary>
     /// Статус документа ЭДО

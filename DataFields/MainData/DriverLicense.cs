@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DataFields.MainData
+namespace TransCRM_ERP.Entites.MainData
 {
     /// <summary>
     /// Данные водительское удостоверение

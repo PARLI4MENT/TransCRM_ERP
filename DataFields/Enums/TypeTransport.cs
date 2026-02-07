@@ -1,4 +1,4 @@
-﻿namespace DataFields.Enums
+﻿namespace TransCRM_ERP.Entites.Enums
 {
     /// <summary>
     /// Вид транспортного средства (ТС)

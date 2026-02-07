@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataFields\DataFields.csproj" />
+    <ProjectReference Include="..\DataFields\TransCRM_ERP.Entites.csproj" />
   </ItemGroup>
 
 </Project>

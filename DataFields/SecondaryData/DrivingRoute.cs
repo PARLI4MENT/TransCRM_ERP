@@ -1,16 +1,19 @@
-﻿using DataFields.MainData;
-using DataFields.TechnicalData;
+﻿using TransCRM_ERP.Entites.MainData;
+using TransCRM_ERP.Entites.TechnicalData;
 using System.ComponentModel.DataAnnotations;
 
-namespace DataFields.SecondaryData
+namespace TransCRM_ERP.Entites.SecondaryData
 {
-    public interface IDrivingRoute : IInfoDateTimeCreate
+    ///<summary>
+    ///Маршрут движения (abstract)
+    ///</summary>
+    public abstract class DrivingRoute : InfoDateTimeCreate
     {
         /// <summary>
         /// Первичный ключ
         /// </summary>
         [Key]
-        public Guid DrivingRouteID { get; }
+        public Guid DrivingRouteID { get; private set; }
 
         /// <summary>
         /// Адрес пункта погрузки
@@ -46,5 +49,15 @@ namespace DataFields.SecondaryData
         /// Статус присвоения к ТН (по умолчанию == false)
         /// </summary>
         public bool AssignmentStatusTN { get; set; }
+
+        /// <summary>
+        /// Внешний ключ => Таблица с Заявкой
+        /// </summary>
+        public Guid RequiredID { get; set; }
+
+        /// <summary>
+        /// Обратное свойство => Таблица с Заявкой
+        /// </summary>
+        public Required Required { get; set; }
     }
 }

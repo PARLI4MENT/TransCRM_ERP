@@ -1,7 +1,7 @@
-﻿using DataFields.SecondaryData;
+﻿using TransCRM_ERP.Entites.SecondaryData;
 using System.ComponentModel.DataAnnotations;
 
-namespace DataFields.MainData
+namespace TransCRM_ERP.Entites.MainData
 {
     /// <summary>
     /// <inheritdoc cref="IAddressPoint"/>

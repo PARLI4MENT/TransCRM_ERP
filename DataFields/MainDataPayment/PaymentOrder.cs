@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataFields.MainDataPayment
+namespace TransCRM_ERP.Entites.MainDataPayment
 {
     /// <summary>
     /// Оплата заказа (Платежные поручения)

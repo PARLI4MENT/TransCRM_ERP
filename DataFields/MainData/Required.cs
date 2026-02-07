@@ -1,14 +1,14 @@
-﻿using DataFields.Enums;
-using DataFields.SecondaryData;
-using DataFields.TechnicalData;
+﻿using TransCRM_ERP.Entites.Enums;
+using TransCRM_ERP.Entites.SecondaryData;
+using TransCRM_ERP.Entites.TechnicalData;
 using System.ComponentModel.DataAnnotations;
 
-namespace DataFields.MainData
+namespace TransCRM_ERP.Entites.MainData
 {
     /// <summary>
     /// Таблица с Заявкой
     /// </summary>
-    public class Required : IInfoDateTimeCreate
+    public class Required : InfoDateTimeCreate
     {
         ///<summary>
         ///Первичный ключ
@@ -29,7 +29,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Номер заявки доп. == NULL
         /// </summary>
-        public string? RequestNumbAdd { get; set; }
+        public string RequestNumbAdd { get; set; }
 
         ///<summary>
         ///Начальная стоимость заявки
@@ -44,7 +44,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Массив маршрута
         /// </summary>
-        public List<IDrivingRoute>? DrivingRoutes { get; set; }
+        public ICollection<DrivingRoute> DrivingRoutes { get; set; } = new List<DrivingRoute>();
 
         /// <summary>
         /// Статус заявки (по умолчанию = Новая перевозка)
@@ -57,29 +57,27 @@ namespace DataFields.MainData
         /// <summary>
         /// Транспортные накладные
         /// </summary>
-        //public List<Waybill>? Waybills { get; set; }
+        public ICollection<Waybill> Waybills { get; set; } = new List<Waybill>();
         
         /// <summary>
         /// Поле Авто
         /// </summary>
-        public Autotransport? Autotransport {  get; set; }
+        public Autotransport Autotransport {  get; set; }
 
         /// <summary>
         /// Поле Водитель
         /// </summary>
-        public Driver? Driver { get; set; }
+        public Driver Driver { get; set; }
 
         //  ДОДЕЛАТЬ!!!
         /// <summary>
-        /// Конечная стоимость заявки (по умолчанию == RequestCost, если заявка почасовая по умножается на количество часов)
+        /// Конечная стоимость заявки (RequestCost * RequestCostCount)
         /// </summary>
-        public double? RequestCostFinal { get; set; }
+        public double RequestCostFinal { get; set; }
 
         /// <summary>
         /// Комментарий к заявке
         /// </summary>
-        public string? Comment { get; set; }
-
-        public DateTime? InfoDateTimeCreate { get; private set; } = DateTime.Now;
+        public string Comment { get; set; }
     }
 }

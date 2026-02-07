@@ -1,7 +1,7 @@
-﻿using DataFields.Enums;
+﻿using TransCRM_ERP.Entites.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace DataFields.MainData
+namespace TransCRM_ERP.Entites.MainData
 {
     /// <summary>
     /// Автотранспорт
@@ -47,7 +47,7 @@ namespace DataFields.MainData
         /// <summary>
         /// Грузоподъёмность в тоннах
         /// </summary>
-        public required double Lifting { get; set; }
+        public required float Lifting { get; set; }
 
         /// <summary>
         /// Объём (Длина * ширина * высота), м3

@@ -1,4 +1,4 @@
-﻿namespace DataFields.SecondaryData
+﻿namespace TransCRM_ERP.Entites.SecondaryData
 {
     /// <summary>
     /// Адрес

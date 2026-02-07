@@ -1,4 +1,4 @@
-﻿using DataFields.TechnicalData;
+﻿using TransCRM_ERP.Entites.TechnicalData;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,12 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataFields.MainData
+namespace TransCRM_ERP.Entites.MainData
 {
     /// <summary>
     /// Данные водителя
     /// </summary>
-    public class Driver : IInfoDateTimeCreate
+    public class Driver : InfoDateTimeCreate
     {
         /// <summary>
         /// Первичный ключ

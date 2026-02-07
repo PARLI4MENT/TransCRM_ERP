@@ -1,16 +1,14 @@
-﻿using DataFields.SecondaryData;
+﻿using TransCRM_ERP.Entites.SecondaryData;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DataFields.MainData
+namespace TransCRM_ERP.Entites.MainData
 {
     ///<summary>
     ///Маршрут движения (почасовая)
     ///</summary>
-    public class DrivingRouteHourly : IDrivingRoute
+    public class DrivingRouteHourly : DrivingRoute
     {
-        [Key]
-        public Guid DrivingRouteID { get; private set; }
-
         public required AddressPoint AddressLoading { get; set; }
         public required DateTime DataLoading { get; set; }
         public DateTime? DataLoadingFact { get; set; }
@@ -25,6 +23,9 @@ namespace DataFields.MainData
 
         public bool AssignmentStatusTN { get; set; } = false;
 
+        public Guid RequiredID { get; set; }
+        public Required Required { get; set; }
+        
         public DateTime? InfoDateTimeCreate { get; private set; } = DateTime.Now;
     }
 }

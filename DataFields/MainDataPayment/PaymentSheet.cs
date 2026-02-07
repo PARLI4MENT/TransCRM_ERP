@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DataFields.MainDataPayment
+namespace TransCRM_ERP.Entites.MainDataPayment
 {
     /// <summary>
     /// Лист оплаты

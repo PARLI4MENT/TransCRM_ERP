@@ -1,13 +1,13 @@
-﻿using DataFields.Enums;
-using DataFields.TechnicalData;
+﻿using TransCRM_ERP.Entites.Enums;
+using TransCRM_ERP.Entites.TechnicalData;
 using System.ComponentModel.DataAnnotations;
 
-namespace DataFields.SecondaryData
+namespace TransCRM_ERP.Entites.SecondaryData
 {
     /// <summary>
     /// Транспортная накладная
     /// </summary>
-    public interface IWaybill : IInfoDateTimeCreate
+    public abstract class Waybill : InfoDateTimeCreate
     {
         /// <summary>
         /// Первичный ключ
@@ -48,7 +48,7 @@ namespace DataFields.SecondaryData
         /// <summary>
         /// Маршрут
         /// </summary>
-        public List<IDrivingRoute>? DrivingRoute { get; set; }
+        public List<DrivingRoute>? DrivingRoute { get; set; }
 
         /* ПОКА НЕ НУЖНО
         /// <summary>
