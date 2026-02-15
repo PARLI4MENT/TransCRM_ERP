@@ -63,19 +63,6 @@ namespace cli_test_TransCRM_ERP
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<DrivingRoute>()
-            //    .HasDiscriminator<string>("DrivingRouteSimple")
-            //    .HasValue<DrivingRouteSimple>("Simple");
-
-            //modelBuilder.Entity<DrivingRoute>()
-            //    .HasDiscriminator<string>("DrivingRouteHourly")
-            //    .HasValue<DrivingRouteHourly>("Hourly");
-
-            //modelBuilder.Entity<DrivingRoute>()
-            //    .HasOne(w => w.Required)
-            //    .WithMany(req => req.DrivingRoutes)
-            //    .HasForeignKey(key => key.RequiredID);
-
             modelBuilder.Entity<DrivingRoute>()
                 .HasKey(key => key.DrivingRouteID);
 
@@ -86,11 +73,6 @@ namespace cli_test_TransCRM_ERP
 
             modelBuilder.Entity<DrivingRouteHourly>();
             modelBuilder.Entity<DrivingRouteSimple>();
-
-            //modelBuilder.Entity<Waybill>()
-            //    .HasOne(w => w.Required)
-            //    .WithMany(r => r.Waybills)
-            //    .HasForeignKey(k => k.RequiredID);
         }
     }
 }
