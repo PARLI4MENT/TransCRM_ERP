@@ -1,4 +1,4 @@
-﻿using TransCRM_ERP.Entites.MainData;
+﻿using TransCRM_ERP.Entites.BaseData;
 using TransCRM_ERP.Entites.TechnicalData;
 using System.ComponentModel.DataAnnotations;
 

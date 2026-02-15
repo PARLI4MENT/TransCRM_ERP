@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TransCRM_ERP.Entites.MainData
+namespace TransCRM_ERP.Entites.BaseData
 {
     /// <summary>
     /// Маршрут движения (простой А=>Б)

@@ -1,7 +1,7 @@
 ﻿using TransCRM_ERP.Entites.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace TransCRM_ERP.Entites.MainData
+namespace TransCRM_ERP.Entites.BaseData
 {
     /// <summary>
     /// Автотранспорт

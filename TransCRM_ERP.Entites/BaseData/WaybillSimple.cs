@@ -2,7 +2,7 @@
 using TransCRM_ERP.Entites.SecondaryData;
 using System.ComponentModel.DataAnnotations;
 
-namespace TransCRM_ERP.Entites.MainData
+namespace TransCRM_ERP.Entites.BaseData
 {
     /// <summary>
     /// <inheritdoc cref="IWaybill"/> => Простая

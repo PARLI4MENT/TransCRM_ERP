@@ -1,4 +1,4 @@
-﻿using TransCRM_ERP.Entites.MainData;
+﻿using TransCRM_ERP.Entites.BaseData;
 using TransCRM_ERP.Entites.SecondaryData;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,32 +7,32 @@ namespace cli_test_TransCRM_ERP
     public class AppDbContext : DbContext
     {
         /// <summary>
-        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.MainData.Required" />
+        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.BaseData.Required" />
         /// </ summary >
         public DbSet<Required> Requireds { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.MainData.WaybillSimple"/>
+        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.BaseData.WaybillSimple"/>
         /// </summary>
         public DbSet<Waybill> Waybills { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.MainData.AddressPoint" />
+        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.BaseData.AddressPoint" />
         /// </ summary >
         public DbSet<AddressPoint> AddressPoints { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.MainData.Autotransport"/>
+        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.BaseData.Autotransport"/>
         /// </summary>
         public DbSet<Autotransport> Autotransports { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.MainData.Driver"/>
+        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.BaseData.Driver"/>
         /// </summary>
         public DbSet<Driver> Drivers { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.MainData.DriverLicense"/>
+        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.BaseData.DriverLicense"/>
         /// </summary>
         public DbSet<DriverLicense> DriverLicenses { get; set; }
 
@@ -42,17 +42,17 @@ namespace cli_test_TransCRM_ERP
         public DbSet<DrivingRoute> DrivingRoutes { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.MainData.DrivingRouteHourly" />
+        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.BaseData.DrivingRouteHourly" />
         /// </ summary >
         //public DbSet<DrivingRouteHourly> DrivingRouteHourlies { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.MainData.DrivingRouteSimple" />
+        /// DbSet<inheritdoc cref = "TransCRM_ERP.Entites.BaseData.DrivingRouteSimple" />
         /// </ summary >
         //public DbSet<DrivingRouteSimple> DrivingRouteSimples { get; set; }
 
         /// <summary>
-        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.MainData.Passport"/>
+        /// DbSet<inheritdoc cref="TransCRM_ERP.Entites.BaseData.Passport"/>
         /// </summary>
         public DbSet<Passport> Passports { get; set; }
 

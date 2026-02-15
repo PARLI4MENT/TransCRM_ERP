@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransCRM_ERP.Entites.MainData
+namespace TransCRM_ERP.Entites.BaseData
 {
     /// <summary>
     /// Данные водителя

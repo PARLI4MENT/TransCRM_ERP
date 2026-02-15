@@ -3,7 +3,7 @@ using TransCRM_ERP.Entites.SecondaryData;
 using TransCRM_ERP.Entites.TechnicalData;
 using System.ComponentModel.DataAnnotations;
 
-namespace TransCRM_ERP.Entites.MainData
+namespace TransCRM_ERP.Entites.BaseData
 {
     /// <summary>
     /// Таблица с Заявкой
